@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WebSocket</title>
+</head>
+
+<body>
+<p id="output"></p>
+
+<script>
+    let ws = new WebSocket("ws://localhost:8080/ws")
+
+    ws.onopen = function () {
+        console.log('Connected')
+    }
+
+    ws.onmessage = function (event) {
+        var out = document.getElementById('output');
+        out.innerHTML += event.data + '<br>';
+
+        if (event.data === "competition is over") {
+            ws.close()
+            return
+        }
+
+        let questionId = JSON.parse(event.data).id
+        setTimeout(() => {
+            cevap(questionId)
+        }, 1000)
+    }
+
+    function cevap(questionId) {
+        let secenekler = ['A', 'B', 'C', 'D']
+        let index = Math.floor(Math.random() * 4);
+
+        ws.send(JSON.stringify({"id": questionId, "answer": secenekler[index]}))
+    }
+</script>
+</body>
+
+</html>

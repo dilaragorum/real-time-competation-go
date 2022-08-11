@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "correct_answer": "C",
+    "question_content": "The net effect of photosynthesis, chemically, is reduction, leading to the formation of which products?",
+    "content_a": "Carbon dioxide and carbohydrates",
+    "content_b": "Carbon dioxide and protein",
+    "content_c": "Oxygen and carbohydrates",
+    "content_d": "Oxygen, and ATP"
+  },
+  {
+    "id": 2,
+    "correct_answer": "B",
+    "question_content": "A cell membrane is ______________?",
+    "content_a": "Permeable",
+    "content_b": " Semipermeable",
+    "content_c": "Nonpermeable",
+    "content_d": "None of the above."
+  },
+  {
+    "id": 3,
+    "correct_answer": "D",
+    "question_content": "A cell uses which of the following to accelerate chemical reactions enabling its metabolic machinery to operate?",
+    "content_a": "Centrasome",
+    "content_b": " Semipermeable",
+    "content_c": "Nonpermeable",
+    "content_d": "None of the above."
+  },
+  {
+    "id": 4,
+    "correct_answer": "C",
+    "question_content": "Which of the following is not part of the metabolic sequence?",
+    "content_a": "Photosynthesis",
+    "content_b": "Respiration",
+    "content_c": "Hydoplasm",
+    "content_d": "Digestion"
+  },
+  {
+    "id": 5,
+    "correct_answer": "D",
+    "question_content": "Which of the following are NOT organelles found in animal cells?",
+    "content_a": "Nucleus and golgi apparatus",
+    "content_b": "Cellular membrane and cytoplasm",
+    "content_c": "Mitochondria and ribosomes",
+    "content_d": "Chloroplast and central vacuole"
+  }
+]
