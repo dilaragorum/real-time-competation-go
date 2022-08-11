@@ -5,7 +5,7 @@ import "time"
 const (
 	CompetitionNotStartedState = "NOT_STARTED"
 	CompetitionStartedState    = "STARTED"
-	CompetitionFinish          = "FINISH"
+	CompetitionFinish          = "FINISHED"
 
 	CompetitionFinishedStateMessage = "competition is over"
 	CompetitionWaitingStateMessage  = "waiting for another user"

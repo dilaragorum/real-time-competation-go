@@ -15,6 +15,11 @@ var Upgrader = websocket.Upgrader{
 }
 
 func ws(c echo.Context) error {
+	numberOfClients := CountClient()
+	if numberOfClients >= 2 {
+		return c.String(http.StatusBadRequest, "")
+	}
+
 	wsConn, err := Upgrader.Upgrade(c.Response(), c.Request(), nil)
 	if err != nil {
 		return err
